@@ -1,0 +1,17 @@
+name: MurdercraftUtils
+version: 0.1
+main: LemMem.MurdercraftUtils.App
+
+api-version: 1.15
+load: POSTWORLD
+depend: Multiverse-Core
+
+commands: 
+   spectate:
+      description: Spectate the match!
+   play:
+      description: Play the game!
+   findmatch:
+      description: Find a Match!
+   home:
+      description: Go home. This will send you to a sphere with a portal in it most likely.
