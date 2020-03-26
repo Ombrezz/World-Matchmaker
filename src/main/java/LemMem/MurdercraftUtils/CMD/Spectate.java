@@ -11,14 +11,18 @@ import LemMem.MurdercraftUtils.App;
 
 public class Spectate implements CommandExecutor {
 
+	// Command init
 	private App app;
 	
 	public Spectate(App _app) {
 		app = _app;
 	}
 	
+	// Command behavior
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		
+		// Make sure command sender is player
 		Player p;
 		if(sender instanceof Player) {
 			p = (Player)sender;
@@ -26,6 +30,8 @@ public class Spectate implements CommandExecutor {
 			sender.sendMessage("Only players can use this command!");
 			return true;
 		}
+		
+		// Make player a spectator
 		if(p.getWorld() == Bukkit.getWorld(app.cfg.getString("IgnorePlayAndSpectate"))) {
 			
 		}
