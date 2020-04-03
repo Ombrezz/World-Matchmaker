@@ -4,13 +4,8 @@ main: LemMem.MurdercraftUtils.App
 
 api-version: 1.15
 load: POSTWORLD
-depend: Multiverse-Core
 
 commands: 
-   spectate:
-      description: Spectate the match!
-   play:
-      description: Play the game!
    findmatch:
       description: Find a Match!
    home:

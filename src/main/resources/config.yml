@@ -1,0 +1,6 @@
+#Size of the matches. Make sure it is even.
+MatchSize: 8
+#World where /play and /spectate don't work
+IgnorePlayAndSpectate: world
+#Time (in seconds) between Match Creations
+QueueCheckTiming: 30
